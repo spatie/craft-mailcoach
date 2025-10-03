@@ -2,6 +2,4 @@
 
 namespace Spatie\CraftMailcoach;
 
-class CraftMailcoachClass
-{
-}
+class CraftMailcoachClass {}
