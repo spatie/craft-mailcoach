@@ -1,0 +1,42 @@
+{
+  "name": "spatie/craft-mailcoach",
+  "description": "Mailcoach mailer adapter",
+  "type": "craft-plugin",
+  "license": "MIT",
+  "support": {
+    "email": "mailcoach@spatie.be",
+    "issues": "https://github.com/spatie/craft-mailcoach/issues?state=open",
+    "source": "https://github.com/spatie/craft-mailcoach",
+    "docs": "https://github.com/spatie/craft-mailcoach",
+    "rss": "https://github.com/spatie/craft-mailcoach/releases.atom"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.8.0",
+    "spatie/mailcoach-mailer": "^1.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Spatie\\CraftMailcoach\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "mailcoach",
+    "name": "Mailcoach",
+    "developer": "Spatie",
+    "documentationUrl": "https://github.com/spatie/craft-mailcoach"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.25"
+  }
+}

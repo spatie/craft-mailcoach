@@ -1,0 +1,21 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.autosuggestField({
+    label: "API Token"|t('mailcoach'),
+    instructions: "The Mailcoach API token."|t('mailcoach'),
+    id: 'apiToken',
+    name: 'apiToken',
+    value: adapter.apiToken,
+    suggestEnvVars: true,
+    errors: adapter.getErrors('apiToken')
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Host"|t('mailcoach'),
+    instructions: "The Mailcoach host. (By default this is `<your-team>.mailcoach.app` but if you use self-hosted Mailcoach this is your own domain.)"|t('mailcoach'),
+    id: 'host',
+    name: 'host',
+    value: adapter.host,
+    suggestEnvVars: true,
+    errors: adapter.getErrors('host')
+}) }}
